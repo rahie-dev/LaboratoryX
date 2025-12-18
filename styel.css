@@ -162,6 +162,25 @@ main .text-content button.view-services {
 main .text-content button.view-services:hover {
   background-color: #024dd0;
 }
+.view-services {
+  background-color: #0359f6;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+}
+.view-services:hover {
+  background-color: #024dd0;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+}
 
 /* Image */
 main .image-content {
