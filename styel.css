@@ -15,23 +15,19 @@ a {
   color: inherit;
 }
 
-/* Top bar */
+
+/* Top Bar */
 .top-bar {
-  background-color: #0359f6; /* #0359f6 */
-  color: white;
-  font-size: 14px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 30px;
-  font-weight: normal;
-  line-height: 1;
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+  background-color: #005bff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  z-index: 1010;
 }
 /* nav {
     position: fixed;
@@ -48,63 +44,97 @@ a {
 .top-bar .left span {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 .top-bar .right {
   font-weight: normal;
+  font-size: 1.1rem;
 }
 
 /* Navbar */
-nav {
+.navbar {
+  position: sticky;
+  top: 36px; /* height of top-bar */
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 30px;
-  box-sizing: border-box;
-  box-shadow: 0 1px 2px rgb(0 0 0 / 0.1);
-  position: fixed;
-  top: 30px;
-  left: 0;
-  width: 100%;
-  z-index: 999;
+  padding: 10px 20px;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 0.1);
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
 }
-nav .logo {
-  font-weight: 500;
-  font-size: 20px;
-  color: #0c2a72;
+
+
+.logo img {
+  height: 40px;
+
+
 }
-nav ul {
-  display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
+
+.menu {
   list-style: none;
-  font-size: 15px;
-  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-nav ul li {
-  white-space: nowrap;
+
+.menu li a {
+  text-decoration: none;
+  color: #005bff;
+  font-weight: 500;
+  padding: 6px 8px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
-nav ul li a {
-  color: #0c2a72;
+
+.menu li a:hover {
+  color: #003bb5;
 }
-nav ul li a:hover {
-  text-decoration: underline;
-}
-nav button.book-test {
-  background-color: #0359f6;
+
+.btn {
   border: none;
-  color: white;
   padding: 8px 20px;
-  border-radius: 10px;
-  font-weight: 600;
-  font-size: 15px;
+  border-radius: 20px;
   cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+  color: white;
+  min-width: 88px;
 }
-nav button.book-test:hover {
-  background-color: #024dd0;
+
+.login-btn {
+  background-color: #005bff;
 }
+
+.login-btn:hover {
+  background-color: #003bb5;
+}
+
+.book-test-btn {
+  background-color: #007bff;
+}
+
+.book-test-btn:hover {
+  background-color: #005fcc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Main content */
 main {
@@ -502,3 +532,7 @@ footer a:hover {
   font-size: 13px;
   color: #cce0ff;
 }
+
+
+
+
