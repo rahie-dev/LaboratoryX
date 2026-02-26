@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Navbar</title>
+
+  <link rel="stylesheet" href="../boking/style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class ="allnavbar">
+<!-- 🔵 Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-left">
+      <span class="contact-item"><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</span>
+      <span class="contact-item"><i class="fa-regular fa-envelope"></i> info@medilab.com</span>
+    </div>
+    <div class="top-right">
+      Mon - Sat: 8:00 AM - 8:00 PM
+    </div>
+    
+    </div>
+</div>
+
+<!-- ⚪ Main Navbar -->
+<nav class="navbar">
+  <div class="container">
+
+    <div class="logo">
+      <img src="../boking/image/logo.png">
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Test Package</a></li>
+      <li><a href="boking\boking.html">Booking</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="../faq/faq.html">FAq</a></li>
+      <li><a href="../blog/blog.html">Blog</a></li>
+
+    </ul>
+
+    <div class="nav-btn">
+      <button class="btn-login">login</button>
+      <button class="btn-book">Book Test</button>
+
+    </div>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+  </div>
+</nav>
+</div>
+<!-- 🟢 Content Section -->
+<div class="content">
+  <h1 class="content-title">Book an Appointment</h1>
+  <p>Schedule your test online and receive accurate results within 24 hours. Choose home collection or visit our center.</p>
+</div>
+<div class ="main-content">
+<!--form section-->
+<div class="form-section">
+  <h2>Appointment Details</h2>
+  <!-- Form fields -->
+  <label for="name">Full Name*</label>
+  <input type="text" id="name" name="Full Name" placeholder="Your full name">
+  <label for ="phone">Phone Number*</label>
+  <input type="text" id="phone" name="Phone Number" placeholder="Your phone number">
+   <label for="test type" >Test Type*</label>
+  <select id="test-type" name="Test Type">
+     <option value="">Select a test package</option>
+    <option value="basic">Basic Health Checkup - $49</option>
+    <option value="cbc">Complete Blood Count - $29</option>
+    <option value="diabetes">Diabetes Screening - $35</option>
+    <option value="comprehensive">Comprehensive Health - $99</option>
+    <option value="thyroid">Thyroid Profile - $45</option>
+    <option value="vitamin">Vitamin Deficiency - $55</option>
+    <option value="heart">Heart Health Package - $69</option>
+    <option value="women">Women's Health - $79</option>
+   <option value="senior">Senior Citizen Package - $89</option>
+    
+  </select>
+  <label for="preferred-date">Preferred Date*</label>
+  <input type="date" id="preferred-date" name="Preferred Date">
+  <label for ="prescription">Upload Prescription (Optional)</label>
+  <div class="upload-drop" id="uploadDrop">
+    <input type="file" id="prescription" name="Upload Prescription" accept=".pdf,.jpg,.jpeg,.png">
+    <div class="upload-inner">
+      <i class="fa-solid fa-cloud-arrow-up fa-2x"></i>
+      <p class="upload-title">Click to upload or drag and drop</p>
+      <p class="upload-sub">PDF, JPG, PNG up to 5MB</p>
+    </div>
+  </div>
+  <label for="additional-Messages">Additional Messages</label> 
+  <textarea id="additional-messages" name="Additional Messages" placeholder="Any additional information you'd like to share"></textarea>
+  <button  class="btn-book-Apoointment" >Book  Appointment</button>
+</div>
+
+  <!-- Sidebar on the right -->
+  <aside class="sidebar">
+    <div class="card-sm">
+      <h3><i class="fa-regular fa-clock"></i> Working Hours</h3>
+      <ul class="working-hours">
+        <li>Monday - Saturday<br><a class="time">8:00 AM - 8:00 PM</a></li>
+        <li>Sunday<br><a class="time">9:00 AM - 2:00 PM</a></li>
+      </ul>
+    </div>
+
+    <div class="card-sm">
+      <h3><i class="fa-solid fa-phone"></i> Emergency Contact</h3>
+      <p class="muted">24/7 Support</p>
+      <p><a href="tel:+15551234567">+1 (555) 123-4567</a><br><a href="mailto:emergency@medilab.com">emergency@medilab.com</a></p>
+    </div>
+
+    <div class="card-sm">
+      <h3><i class="fa-solid fa-location-dot"></i> Location</h3>
+      <p class="muted">123 Medical Street,<br>Healthcare City, HC 12345</p>
+      <div class="map-placeholder"><i class="fa-solid fa-map-pin"></i></div>
+    </div>
+  </aside>
+  
+
+</div>
+<d
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col about">
+      <h4>About MEDILAB</h4>
+      <p>We provide advanced medical laboratory services with accurate and reliable results for better healthcare decisions.</p>
+      <ul class="social">
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Test Packages</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col services">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#">Blood Tests</a></li>
+        <li><a href="#">Radiology</a></li>
+        <li><a href="#">Pathology</a></li>
+        <li><a href="#">Microbiology</a></li>
+        <li><a href="#">Health Packages</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col contact">
+      <h4>Contact Us</h4>
+      <p><i class="fa-solid fa-location-dot"></i> 123 Medical Street, Healthcare City, HC 12345</p>
+      <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
+      <p><i class="fa-regular fa-envelope"></i> info@medilab.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2025 MEDILAB. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../javasript/script.js"></script>
+</body>
+</html>
